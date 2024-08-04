@@ -68,10 +68,10 @@ const productosForrajeria = [
 let carrito = []
 
 productosForrajeria.forEach((el) => {
-    nodoPadre.innerHTML += `<div>
+    nodoPadre.innerHTML += `<div class="producto">
 <h2>${el.nombre}</h2>
 <img src="${el.img}"/>
-<p>${el.descripcion}</p>
-<p>${el.precio}</p>
+<p class="descipcion">${el.descripcion}</p>
+<p class="precio">${"$"+el.precio}</p>
 </div>`
 })
