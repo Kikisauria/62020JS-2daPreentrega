@@ -73,5 +73,6 @@ productosForrajeria.forEach((el) => {
 <img src="${el.img}"/>
 <p class="descipcion">${el.descripcion}</p>
 <p class="precio">${"$"+el.precio}</p>
+<button type="button" class="boton">Agregar al carrito</button>
 </div>`
 })
