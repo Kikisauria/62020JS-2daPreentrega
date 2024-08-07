@@ -1,4 +1,11 @@
 const nodoPadre = document.getElementById("nodoPadre")
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('dark-mode-toggle');
+
+    toggleButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    }); 
+});
 
 
 const productosForrajeria = [
@@ -76,3 +83,4 @@ productosForrajeria.forEach((el) => {
 <button type="button" class="boton">Agregar al carrito</button>
 </div>`
 })
+
